@@ -13,6 +13,8 @@ veja tanbem: _extencoes_, mais datahes da _api_ e test de rotas _http_:
 init:
 
 ```
+cd api/
+
 npm install
  or
 yarn install
