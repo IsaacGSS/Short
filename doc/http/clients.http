@@ -1,0 +1,25 @@
+POST http://localhost:3333/api/links
+Content-Type: application/json
+
+{
+  "code": "jhalan_bipal",
+  "original_url": "https://www.google.com"
+}
+
+###
+
+GET http://localhost:3333/api/links
+
+###
+
+GET http://localhost:3333/api/links/isaac_S.Silva
+
+###
+
+DELETE http://localhost:3333/api/links/10
+
+###
+
+GET http://localhost:3333/jhalan_bipal
+
+###
