@@ -1,7 +1,7 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import z from 'zod'
 
-import sql from "../../../../db/lib/postgres";
+import sql from "@/db/lib/postgres";
 
 
 export async function ReadUniqueShort(app: FastifyInstance) {

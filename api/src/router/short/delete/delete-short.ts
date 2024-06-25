@@ -1,11 +1,10 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import z from 'zod'
 
-import postgres from "postgres";
-import sql from "../../db/lib/postgres";
+import sql from "@/db/lib/postgres";
 
 
-export async function Short(app: FastifyInstance) {
+export async function DeleteShort(app: FastifyInstance) {
     app.delete('/:id', async (request:FastifyRequest, reply:FastifyReply) => {
 
         const idShortSchema = z.object({

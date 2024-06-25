@@ -20,6 +20,10 @@ DELETE http://localhost:3333/api/short/10
 
 ###
 
-GET http://localhost:3333/jhalan_bipal
+GET http://localhost:3333/isaac_S.Silva
+
+###
+
+GET http://localhost:3333/api/metrics
 
 ###

@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyReply } from "fastify";
-import sql from "../../../../db/lib/postgres";
+import sql from "@/db/lib/postgres";
 
 
 export async function ReadAllShort(app: FastifyInstance) {

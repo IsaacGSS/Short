@@ -2,7 +2,7 @@ import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import z from 'zod'
 
 import postgres from "postgres";
-import sql from "../../../db/lib/postgres";
+import sql from "@/db/lib/postgres";
 
 
 export async function CreatShort(app: FastifyInstance) {
