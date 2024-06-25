@@ -1,4 +1,4 @@
-# short
+# short | API REST
 
 > a aplicacao e um encurtamneto de link vincurando a uma URL original e um code name
 

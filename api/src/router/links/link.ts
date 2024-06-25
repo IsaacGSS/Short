@@ -1,5 +1,5 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
-import sql from '../db/lib/postgres';
+import sql from '../../db/lib/postgres';
 import z from 'zod';
 
 export async function Link(app: FastifyInstance) {
