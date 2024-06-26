@@ -12,7 +12,7 @@ export async function Link(app: FastifyInstance) {
         const { code } = codeShortSchema.parse(request.params)
         
         const short = await sql/*sql*/`
-            SELECT code, original_url
+            SELECT id, original_url
             FROM short_links
             WHERE short_links.code = ${code}
         `
@@ -20,10 +20,10 @@ export async function Link(app: FastifyInstance) {
             return reply.status(400).send({ message: 'Esse Short nao existe.' })  
         }
 
-        const linkView = short[0]
+        const link = short[0]
 
-        await redis.zIncrBy('metrics', 1, String(linkView.id))
+        await redis.zIncrBy('metrics', 1, String(link.id))
 
-        return reply.redirect(short[0].original_url)
+        return reply.redirect(link.original_url)
     })
 }

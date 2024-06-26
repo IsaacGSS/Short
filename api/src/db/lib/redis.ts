@@ -5,4 +5,6 @@ const redis = createClient({
     url: env.redis
 })
 
+redis.connect()
+
 export default redis

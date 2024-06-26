@@ -7,5 +7,5 @@ export const Short = {
     creat: CreatShort,
     read: ReadAllShort,
     readUnique: ReadUniqueShort,
-    delete: DeleteShort,
+    delete: DeleteShort,   
 }

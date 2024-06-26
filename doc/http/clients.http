@@ -12,15 +12,15 @@ GET http://localhost:3333/api/short
 
 ###
 
-GET http://localhost:3333/api/short/isaac_S.Silva
+GET http://localhost:3333/api/short/josh
 
 ###
 
-DELETE http://localhost:3333/api/short/10
+DELETE http://localhost:3333/api/short/2
 
 ###
 
-GET http://localhost:3333/isaac_S.Silva
+GET http://localhost:3333/josh
 
 ###
 
