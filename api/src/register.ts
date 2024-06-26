@@ -4,7 +4,7 @@ import { Link } from './router/links/link'
 import { Short } from './router/short/index';
 import { Metrics } from './router/metric/metrics';
 
-export const app = fastify()
+const app = fastify()
 
 //* Router Dev Test */
 app.register(Hello, {
@@ -34,3 +34,5 @@ app.register(Link)
 app.register(Metrics, {
     prefix: '/api/metrics'
 })
+
+export { app }
